@@ -23,8 +23,10 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer__brand">
           <div className="footer__logo">
-            <div className="footer__logo-icon">P</div>
-            <span className="footer__logo-text">Portfolio<span className="gradient-text">.</span></span>
+            <div className="footer__logo-icon">
+              <img src="/logo/logo.png" alt="Logo" />
+            </div>
+            <span className="footer__logo-text">Rahman<span className="gradient-text">.</span></span>
           </div>
           <p className="footer__tagline">
             Building digital experiences that matter. Explore Data, IoT, and meaningful software.

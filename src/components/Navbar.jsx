@@ -38,9 +38,9 @@ export default function Navbar() {
         {/* Logo */}
         <div className="navbar__logo">
           <div className="navbar__logo-icon">
-            <span>P</span>
+            <img src="/logo/logo.png" alt="Logo" />
           </div>
-          <span className="navbar__logo-text">Portfolio<span className="gradient-text">.</span></span>
+          <span className="navbar__logo-text">Rahman<span className="gradient-text">.</span></span>
         </div>
 
         {/* Desktop Nav */}
