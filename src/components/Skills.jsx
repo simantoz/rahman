@@ -76,7 +76,7 @@ export default function Skills() {
             My <span className="gradient-text">Tech Stack</span>
           </h2>
           <p className="section-subtitle">
-            Teknologi yang gue kuasai dan pake sehari-hari untuk build awesome projects.
+            Technology that i used to build awesome projects.
           </p>
         </div>
 
