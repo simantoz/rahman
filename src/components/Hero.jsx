@@ -10,9 +10,8 @@ const SOCIAL_LINKS = [
 
 const TYPED_STRINGS = [
   'IT Student @ Telkom',
-  'Data Enthusiast',
+  'Data & AI Enthusiast',
   'IoT Explorer',
-  'Problem Solver',
 ]
 
 export default function Hero() {
@@ -87,7 +86,7 @@ export default function Hero() {
 
           <div className="hero__desc" style={{ fontSize: '0.9rem', lineHeight: '1.6', maxWidth: '520px', textAlign: 'left', marginBottom: '36px' }}>
             <p style={{ marginBottom: '12px' }}>
-              I’m an Information Technology student at Telkom University who’s genuinely passionate about exploring how technology shapes the world around us. I’m especially interested in IT, Data, and the Internet of Things (IoT), and I enjoy diving into how these fields connect to create smart and meaningful solutions.
+              I’m an Information Technology student at Telkom University who’s genuinely passionate about exploring how technology shapes the world around us. I’m especially interested in IT, Data Science, Artificial Intelligence (AI), and the Internet of Things (IoT).
             </p>
             <p style={{ marginBottom: '12px' }}>
               I love learning new things, building projects, and experimenting with ideas—whether it’s developing systems, working with data, or creating IoT-based solutions. For me, technology isn’t just about coding, it’s about solving problems and making an impact.
@@ -160,7 +159,7 @@ export default function Hero() {
           <div className="hero__float-card hero__float-card--1">
             <span className="hero__float-icon"><FiCpu style={{ color: 'var(--cyan-400)' }} /></span>
             <div>
-              <div className="hero__float-title">Data & IoT</div>
+              <div className="hero__float-title">Data, IoT & AI</div>
               <div className="hero__float-sub">Explorer</div>
             </div>
           </div>

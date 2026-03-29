@@ -167,21 +167,35 @@
 .skills__icon-item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
+  gap: 12px;
+  padding: 8px 18px;
   border-radius: var(--radius-full);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   font-size: 0.85rem;
+  font-weight: 500;
   color: var(--text-secondary);
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: default;
+}
+
+.skills__icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .skills__icon-item:hover {
   border-color: var(--border-glow);
   color: var(--text-primary);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  background: rgba(14, 165, 233, 0.05);
+  box-shadow: 0 5px 15px rgba(14, 165, 233, 0.2);
+}
+
+.skills__icon-item:hover .skills__icon-img {
+  transform: scale(1.2) rotate(5deg);
 }
 
 @media (max-width: 768px) {

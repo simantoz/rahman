@@ -4,33 +4,36 @@ import './Experience.css'
 const EXPERIENCES = [
   {
     id: 1,
-    role: 'Vice President of HMIT',
-    company: 'Telkom University Jakarta',
-    period: 'Active',
+    role: 'Wakil Ketua Himpunan Mahasiswa Teknologi Informasi',
+    company: 'HMIT - Telkom University Jakarta',
+    period: '2025 - Sekarang',
     type: 'org',
-    desc: 'Menjalankan peran sebagai Vice President di Himpunan Mahasiswa IT. Membantu memimpin perencanaan program mahasiswa, advokasi, serta manajemen organisasi dan kepemipinan di prodi.',
+    desc: 'Menjalankan peran sebagai Wakil Ketua di Himpunan Mahasiswa IT. Membantu memimpin perencanaan program mahasiswa, advokasi, serta manajemen organisasi dan kepemipinan di prodi.',
     skills: ['Leadership', 'Management', 'Communication', 'Problem Solving'],
     icon: '🏆',
+    logo: '/assets/telkom-it-badge.png',
   },
   {
     id: 2,
-    role: "Campus Life FGD's Staff",
+    role: "Staff FGD Campus Life ",
     company: 'Marketing Crew Telkom Univ Jakarta',
-    period: 'Active',
+    period: '2024 - 2025',
     type: 'org',
     desc: 'Menjadi staff penggerak campus life melalui kegiatan Focus Group Discussion (FGD). Berkontribusi dalam mengorganisir forum, mengumpulkan feedback, dan memfasilitasi komunikasi mahasiswa.',
     skills: ['Public Speaking', 'Marketing', 'FGD', 'Event Organizing'],
     icon: '🎯',
+    logo: '/assets/marketing-crew.jpg',
   },
   {
     id: 3,
-    role: 'S1 Information Technology',
+    role: 'S1 Teknologi Informasi',
     company: 'Telkom University',
-    period: 'Present',
+    period: '2024 - Sekarang',
     type: 'edu',
     desc: 'Menempuh jenjang pendidikan sarjana IT. Sangat passionate pada eksplorasi seputar pengelolaan Data, Internet of Things (IoT), dan pengembangan Software.',
     skills: ['IoT', 'Data', 'Web Development', 'System Integration'],
     icon: '🎓',
+    logo: '/assets/prodi-it.jpg',
   },
 ]
 
@@ -55,7 +58,7 @@ export default function Experience() {
             Organizations & <span className="gradient-text">Education</span>
           </h2>
           <p className="section-subtitle">
-            Gua cukup aktif di organisasi kampus buat upgrade soft-skill, network, dan leadership.
+            cukup aktif di organisasi kampus buat upgrade soft-skill, network, dan leadership.
           </p>
         </div>
 
@@ -74,8 +77,9 @@ export default function Experience() {
               </div>
               <div className="exp-item__card glass-card">
                 <div className="exp-item__header">
-                  <div>
+                  <div className="exp-item__role-wrapper">
                     <div className="exp-item__role">{exp.role}</div>
+                    {exp.logo && <img src={exp.logo} alt="Logo" className={`exp-item__org-logo exp-item__org-logo--${exp.type}`} />}
                     <div className="exp-item__company">{exp.company}</div>
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 8 }}>

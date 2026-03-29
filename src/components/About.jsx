@@ -4,7 +4,7 @@ import './About.css'
 const STATS = [
   { value: 'IoT', label: 'Hardware & Systems' },
   { value: 'Data', label: 'Analysis & Processing' },
-  { value: 'Web', label: 'Software Development' },
+  { value: 'AI', label: 'Artificial Intelligence' },
   { value: '100%', label: 'Passion to Learn' },
 ]
 
@@ -33,7 +33,7 @@ export default function About() {
                 {'\n'}
                 <span className="code-prop">  name</span>
                 <span className="code-white">: </span>
-                <span className="code-string">'M. Fadhlurrahman'</span>
+                <span className="code-string">'Muhammad Fadhlurrahman'</span>
                 <span className="code-white">,</span>
                 {'\n'}
                 <span className="code-prop">  campus</span>
@@ -52,10 +52,10 @@ export default function About() {
                 <span className="code-string">    'Internet of Things'</span>
                 <span className="code-white">,</span>
                 {'\n'}
-                <span className="code-string">    'Data Analysis/Science'</span>
+                <span className="code-string">    'Data Science & AI'</span>
                 <span className="code-white">,</span>
                 {'\n'}
-                <span className="code-string">    'Web Development'</span>
+                <span className="code-string">    'Software Development'</span>
                 {'\n'}
                 <span className="code-white">  ],</span>
                 {'\n'}
@@ -81,7 +81,7 @@ export default function About() {
               <span className="gradient-text">Problem Solver</span>
             </h2>
             <p className="about__desc">
-              I’m an Information Technology student at Telkom University who’s genuinely passionate about exploring how technology shapes the world around us. I’m especially interested in IT, Data, and the Internet of Things (IoT), and I enjoy diving into how these fields connect to create smart and meaningful solutions.
+              I’m an Information Technology student at Telkom University who’s genuinely passionate about exploring how technology shapes the world around us. I’m especially interested in IT, Data Science, Artificial Intelligence (AI), and the Internet of Things (IoT). I enjoy diving into how these fields connect to create smart and meaningful solutions.
             </p>
             <p className="about__desc">
               I love learning new things, building projects, and experimenting with ideas—whether it’s developing systems, working with data, or creating IoT-based solutions. For me, technology isn’t just about coding, it’s about solving problems and making an impact.

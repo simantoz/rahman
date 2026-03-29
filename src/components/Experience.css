@@ -98,17 +98,59 @@
   flex-wrap: wrap;
 }
 
+.exp-item__role-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+    "role logo"
+    "company logo";
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0 12px;
+}
+
 .exp-item__role {
+  grid-area: role;
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .exp-item__company {
+  grid-area: company;
   font-size: 0.85rem;
   color: var(--blue-glow);
   font-weight: 500;
+}
+
+.exp-item__org-logo {
+  grid-area: logo;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+  padding: 6px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.exp-item__org-logo--edu {
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+}
+
+.exp-item__org-logo--org {
+  border-color: rgba(34, 197, 94, 0.5);
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
+}
+
+.exp-item__org-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  border-color: var(--blue-glow);
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
 }
 
 .exp-item__period {

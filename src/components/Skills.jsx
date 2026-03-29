@@ -7,51 +7,40 @@ const SKILL_CATEGORIES = [
     id: 'frontend',
     label: '🎨 Frontend',
     skills: [
-      { name: 'React.js', level: 85, color: '#61dafb' },
-      { name: 'JavaScript', level: 82, color: '#f7df1e' },
-      { name: 'HTML / CSS', level: 90, color: '#e34f26' },
-      { name: 'TypeScript', level: 65, color: '#3178c6' },
-      { name: 'Next.js', level: 70, color: '#ffffff' },
+      { name: 'React JS', level: 85, color: '#61dafb' },
+      { name: 'HTML', level: 95, color: '#e34f26' },
+      { name: 'CSS', level: 90, color: '#1572b6' },
       { name: 'Tailwind CSS', level: 80, color: '#38bdf8' },
     ],
   },
   {
     id: 'backend',
-    label: '⚙️ Backend',
+    label: '⚙️ Backend & Data',
     skills: [
-      { name: 'Node.js', level: 75, color: '#68a063' },
-      { name: 'Express.js', level: 72, color: '#ffffff' },
-      { name: 'Python', level: 68, color: '#3776ab' },
-      { name: 'PHP', level: 60, color: '#777bb4' },
-      { name: 'REST API', level: 78, color: '#0ea5e9' },
-      { name: 'MySQL', level: 70, color: '#4479a1' },
+      { name: 'Python', level: 75, color: '#3776ab' },
+      { name: 'Golang', level: 60, color: '#00add8' },
+      { name: 'RStudio', level: 70, color: '#75aadb' },
     ],
   },
   {
     id: 'tools',
-    label: '🛠️ Tools & Other',
+    label: '🛠️ Tools & IoT',
     skills: [
-      { name: 'Git / GitHub', level: 80, color: '#f05032' },
-      { name: 'VS Code', level: 95, color: '#007acc' },
-      { name: 'Docker', level: 50, color: '#2496ed' },
-      { name: 'Figma', level: 65, color: '#f24e1e' },
-      { name: 'Linux', level: 60, color: '#fcc624' },
-      { name: 'Vercel', level: 82, color: '#ffffff' },
+      { name: 'Arduino IDE', level: 80, color: '#00979d' },
+      { name: 'Git / GitHub', level: 82, color: '#f05032' },
     ],
   },
 ]
 
 const TECH_ICONS = [
-  { name: 'React', emoji: '⚛️' },
-  { name: 'JS', emoji: '🟨' },
-  { name: 'Node', emoji: '🟩' },
-  { name: 'Python', emoji: '🐍' },
-  { name: 'Git', emoji: '🔀' },
-  { name: 'TypeScript', emoji: '🔷' },
-  { name: 'Docker', emoji: '🐋' },
-  { name: 'Figma', emoji: '🎨' },
-  { name: 'MySQL', emoji: '🗄️' },
-  { name: 'Linux', emoji: '🐧' },
+  { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+  { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+  { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
+  { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'Arduino', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg' },
+  { name: 'RStudio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg' },
+  { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+  { name: 'Golang', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
 ]
 
 export default function Skills() {
@@ -111,7 +100,7 @@ export default function Skills() {
                 className="skills__icon-item"
                 style={{ animationDelay: `${i * 0.06}s` }}
               >
-                <span>{tech.emoji}</span>
+                <img src={tech.icon} alt={tech.name} className="skills__icon-img" />
                 <span>{tech.name}</span>
               </div>
             ))}
