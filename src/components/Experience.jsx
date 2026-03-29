@@ -14,6 +14,17 @@ const EXPERIENCES = [
     logo: '/assets/telkom-it-badge.png',
   },
   {
+    id: 4,
+    role: 'Staff Departemen Advokesma',
+    company: 'HMIT - Telkom University Jakarta',
+    period: '2024 - 2025',
+    type: 'org',
+    desc: 'Bertugas sebagai wadah menampung dan menyampaikan aspirasi mahasiswa serta melakukan koordinasi kepada pihak kampus untuk keberlanjutan atas saran dan kritik dari rekan mahasiswa Teknologi Informasi.',
+    skills: ['Advocacy', 'Public Speaking', 'Critical Thinking', 'Negotiation'],
+    icon: '📢',
+    logo: '/assets/telkom-it-badge.png',
+  },
+  {
     id: 2,
     role: "Staff FGD Campus Life ",
     company: 'Marketing Crew Telkom Univ Jakarta',
