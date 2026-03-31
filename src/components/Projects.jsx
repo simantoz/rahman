@@ -7,7 +7,7 @@ const PROJECTS = [
     id: 1,
     title: 'Tanduvia - Posyandu Digital',
     category: 'Healthcare & IoT',
-    explanation: 'Project website pertama yang terintegrasi langsung dengan hardware RFID untuk pendataan kartu balita secara otomatis. Fokus pada akurasi data tumbuh kembang anak sesuai standar WHO.',
+    explanation: 'Team Project website TANDUVIA merupakan project dalam kompetisi INNOVILLAGE 2026, yang terintegrasi langsung dengan hardware RFID untuk pendataan kartu anak secara otomatis. Fokus pada akurasi data tumbuh kembang anak sesuai standar WHO.',
     images: [
       { url: '/assets/projects/tanduvia/landing.png', portrait: false },
       { url: '/assets/projects/tanduvia/features.png', portrait: false },
@@ -91,7 +91,7 @@ function ProjectShowcase({ project, inView }) {
       {/* Project Explanation */}
       <div className="showcase__explanation">
         <p>
-          {project.explanation || "Project website pertama gua yang terintegrasi langsung dengan hardware RFID untuk pendataan kartu anak secara otomatis. Fokus pada akurasi data tumbuh kembang anak sesuai standar WHO."}
+          {project.explanation || "Team Project website TANDUVIA merupakan project dalam kompetisi INNOVILLAGE 2026, yang terintegrasi langsung dengan hardware RFID untuk pendataan kartu anak secara otomatis. Fokus pada akurasi data tumbuh kembang anak sesuai standar WHO."}
         </p>
       </div>
 
