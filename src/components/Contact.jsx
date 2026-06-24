@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer'
-import { FiMail, FiMapPin, FiGithub, FiPhone } from 'react-icons/fi'
+import { FiMail, FiMapPin, FiGithub, FiPhone, FiLinkedin } from 'react-icons/fi'
 import './Contact.css'
 
 const CONTACT_INFO = [
@@ -25,6 +25,7 @@ const CONTACT_INFO = [
 
 const SOCIALS = [
   { icon: <FiGithub />, href: 'https://github.com/simantoz', label: 'GitHub' },
+  { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/muhammad-fadhlurrahman-a1b2ab308/', label: 'LinkedIn' },
 ]
 
 export default function Contact() {
